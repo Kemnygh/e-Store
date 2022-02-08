@@ -1,0 +1,24 @@
+{
+  "name": "e-store",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kemnygh/e-Store.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Kemnygh/e-Store/issues"
+  },
+  "homepage": "https://github.com/Kemnygh/e-Store#readme",
+    "dependencies": {
+        "ejs": "^3.1.6",
+        "express": "^4.17.2"
+    }
+}
