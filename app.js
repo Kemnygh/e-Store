@@ -2,6 +2,8 @@ const express = require("express")
 
 const app = new express();
 
+let indexRouter = require('./routes/index')
+
 //Set view engine
 app.set('view engine', 'ejs')
 
@@ -11,11 +13,8 @@ app.use(express.static('public'));
 // body parser middleware
 app.use(express.json())
 
+app.use('/', indexRouter);
 
-app.get('/',(req,res)=>{
-  res.setHeader("content-type","text/html")
-  res.send('<h1>This is the home page</h1>')
-})
 
 
 const PORT = 8504;
