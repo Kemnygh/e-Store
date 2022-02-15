@@ -47,3 +47,17 @@ body{
 .hover :hover{
   color: rgb(146, 145, 145);
 }
+
+/* ----------- footer ------------*/
+
+.pay-icon{
+  height: 35px;
+  border: 1px solid  rgb(255, 255, 255, 0.3);
+  border-radius: 5px;
+  padding: 5px;
+  background-color:  rgb(255, 255, 255, 0.2);
+}
+
+.bg-footer{
+  background-color:  rgb(0, 0, 0, 0.2);
+}
