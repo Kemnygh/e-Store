@@ -27,6 +27,23 @@ body{
   color: white;
 }
 
+.bg-modal{
+  background-color:  rgb(0, 0, 0, 0.7)
+}
+
+h5 span{
+  font-size: 15px;
+  font-style: italic;
+  font-weight: 100;
+}
+
+.btn-sign{
+  border: 1px solid  rgb(255, 255, 255, 0.3);
+  border-radius: 5px;
+  /* padding: 5px; */
+  background-color:  rgb(255, 255, 255, 0.2);
+}
+
 /* ---------- slider -----------*/
 
 .img-fluid{
