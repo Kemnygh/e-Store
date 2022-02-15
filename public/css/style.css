@@ -1,0 +1,49 @@
+body{
+  background-image: url("../images/background/5.jpg");
+  background-size: 100% 100%;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	transition: background .2s;
+}
+.header-content{
+ background-color: rgb(0, 0, 0, 0.2);
+}
+
+.logo{
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  font-family: 'Festive', cursive;
+  font-size: 50px;
+}
+
+.nav-item{
+ text-transform: uppercase;
+ font-size: 13px;
+}
+
+.nav-link{
+  color: white;
+}
+
+/* ---------- slider -----------*/
+
+.img-fluid{
+  height: 500px;
+}
+
+/*----------- featured ---------*/
+
+.product-card{
+  background-color:  rgb(0, 0, 0, 0.2);
+}
+
+.product-compare, .product-catergory, .product-name{
+  text-decoration: none;
+  color: white;
+}
+
+.hover :hover{
+  color: rgb(146, 145, 145);
+}
