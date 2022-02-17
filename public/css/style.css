@@ -37,11 +37,28 @@ h5 span{
   font-weight: 100;
 }
 
+.hidden{
+  visibility: hidden;
+}
+/* --------- forms -----------*/
 .btn-sign{
   border: 1px solid  rgb(255, 255, 255, 0.3);
   border-radius: 5px;
   /* padding: 5px; */
   background-color:  rgb(255, 255, 255, 0.2);
+}
+
+.errborder{
+  border: 1px solid red;
+}
+
+#fupdate, #lupdate, #eupdate, .pass1, .pass2, #passmatch, .pwd-error, #login-notice{
+  color: red;
+  font-size: 15px;
+}
+
+.pwd-success{
+  color: greenyellow;
 }
 
 /* ---------- slider -----------*/
