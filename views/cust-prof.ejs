@@ -10,8 +10,66 @@
     <div class="row">
         <div class="col-75">
             <div class="container">
+                <!--Inserting Form for capturing customer details-->
                 <form>
-                    
+                    <div class="row">
+                        <div class="col-50">
+                            <h3>BILLING ADDRESS</h3>
+                            <label for="fname"><i class="fa fa-user"></i> FULL NAME</label>
+                            <input type="text" id="fname" name="firstname" placeholder="Sharon A. Apot">
+                            <label for="email"><i class="fa fa-envelope"></i> EMAIL</label>
+                            <input type="text" id="email" name="email" placeholder="sharon@example.com">
+                            <label for="adr"><i class="fa fa-address-card-o"></i> ADDRESS</label>
+                            <input type="text" id="adr" name="address" placeholder="54321 - 00100 Nairobi">
+                            <label for="city"><i class="fa fa-institution"></i> CITY</label>
+                            <input type="text" id="city" name="city" placeholder="Nairobi">
+              
+                            <div class="row">
+                                <div class="col-50">
+                                    <label for="state">COUNTRY</label>
+                                    <input type="text" id="state" name="state" placeholder="KENYA">
+                                </div>
+
+                                <div class="col-50">
+                                    <label for="zip">ZIP</label>
+                                    <input type="text" id="zip" name="zip" placeholder="00200">
+                                </div>
+                            </div>
+                        </div>
+              
+                        <div class="col-50">
+                            <h3>PAYMENT</h3>
+                            <label for="fname">ACCEPTED CARDS</label>
+                            <div class="icon-container">
+                                <i class="fa fa-cc-visa" style="color:navy;"></i>
+                                <i class="fa fa-cc-amex" style="color:blue;"></i>
+                                <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                                <i class="fa fa-cc-discover" style="color:orange;"></i>
+                            </div>
+                            <label for="cname">NAME ON CARD</label>
+                            <input type="text" id="cname" name="cardname" placeholder="Sharon A. Apot">
+                            <label for="ccnum">CREDIT CARD NUMBER</label>
+                            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+                            <label for="expmonth">EXP MONTH</label>
+                            <input type="text" id="expmonth" name="expmonth" placeholder="September">
+              
+                            <div class="row">
+                                <div class="col-50">
+                                    <label for="expyear">EXP YEAR</label>
+                                    <input type="text" id="expyear" name="expyear" placeholder="2025">
+                                </div>
+                                <div class="col-50">
+                                    <label for="cvv">CVV</label>
+                                    <input type="text" id="cvv" name="cvv" placeholder="352">
+                                </div>
+                            </div>
+                        </div>
+              
+                    </div>
+                    <label>
+                        <input type="checkbox" checked="checked" name="sameadr"> SHIPPING ADDRESS SAME AS BILLING ADDRESS
+                    </label>
+                    <input type="submit" value="Continue to checkout" class="btn">                    
                 </form>
             </div>
         </div>
