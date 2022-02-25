@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Customer Profile</title>
     <link rel="stylesheet" href="../public/css/style.css">
+    <script type="text/javascript" src="../public/js/scripts.js"></script>
 </head>
 <body>
     <div class="row">
@@ -19,7 +20,7 @@
                             <label for="fname"><i class="fa fa-user"></i> FIRST NAME</label>
                             <input type="text" id="fname" name="firstname" placeholder="Sharon">
                             <label for="sname"><i class="fa fa-user"></i> SECOND NAME</label>
-                            <input type="text" id="fname" name="firstname" placeholder="Apot">
+                            <input type="text" id="sname" name="firstname" placeholder="Apot">
                             <label for="email"><i class="fa fa-envelope"></i> EMAIL</label>
                             <input type="text" id="email" name="email" placeholder="sharon@example.com">
                             <label for="adr"><i class="fa fa-address-card-o"></i> POSTAL ADDRESS</label>
@@ -72,7 +73,7 @@
                     <label>
                         <input type="checkbox" checked="checked" name="sameadr"> SHIPPING ADDRESS SAME AS BILLING ADDRESS
                     </label>
-                    <input type="submit" value="Continue to checkout" class="btn" onclick="cusDetails()">                    
+                    <input type="submit" value="Continue to checkout" class="btn" onclick="custDetails()">                    
                 </form>
             </div>
         </div>
