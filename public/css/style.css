@@ -4,7 +4,7 @@
     -ms-flex-wrap: wrap; 
     flex-wrap: wrap;
     margin: 0 -16px;
-    width: 75%;
+    width: 100%;
     
   }
   
@@ -34,6 +34,8 @@
     padding: 5px 20px 15px 20px;
     border: 1px solid lightgrey;
     border-radius: 3px;
+    margin: auto;
+    width: 50%;
   }
   
   input[type=text] {
@@ -84,8 +86,4 @@
     .col-25 {
       margin-bottom: 20px;
     }
-  }
-
-  form{
-      margin: auto;
   }
