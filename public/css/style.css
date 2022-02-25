@@ -4,6 +4,8 @@
     -ms-flex-wrap: wrap; 
     flex-wrap: wrap;
     margin: 0 -16px;
+    width: 75%;
+    
   }
   
   .col-25 {
@@ -24,7 +26,7 @@
   .col-25,
   .col-50,
   .col-75 {
-    padding: 16px;
+    padding: 0 16px;
   }
   
   .container {
@@ -82,4 +84,8 @@
     .col-25 {
       margin-bottom: 20px;
     }
+  }
+
+  form{
+      margin: auto;
   }
