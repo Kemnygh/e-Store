@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="/css/stylesheetforpanles.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 class="head" title="estore">
+                <i class="fa fa-renren"></i> e<span class="halfHead">Store<sup style="font-size:40%; color: white;">&reg</sup>
+                </span>
+            </h1>
+            </div>
+    <!-- Add Product -->
+                    <div class="modelBox" id="modeForAdd">
+                        <div class="modelContent">
+                            <div class="headerOfSaleModel">
+                            <h1 class="modeH1" id="category"></h1>
+                            </div>
+                            <div class="saleInfoForm">
+                            <form action="" id="addproduct">
+                                <p id="errorInAdd">Note : You can daily Add only one product in each category.</p>
+                                <input type="text" class="inputOfedit" for="name" id="addName" placeholder="Product Name" required="required">
+                                <input type="number" class="inputOfedit" for="price" id="addPrice" placeholder="Product Price" required="required">
+                                <input type="text" class="inputOfedit" for="color" id="addColors" placeholder="Product Colors" required="required">
+                                <input type="text" class="inputOfedit"for="stock" id="addStock" placeholder="Product Stock" required="required">
+                                <input type="submit" value="+ ADD" class="submitBtnOfSale">
+                            </form>
+                            </div>
+                            <div class="footerOfMode" onclick="document.getElementById('modeForAdd').style.display = 'none';">
+                                    <span><i class="fa fa-close"></i> CANCEL</span>
+                            </div>
+                        </div>
+                    </div>
+
+                <div class="filter"><input type="text" id="userInput" class="input" placeholder="Search Product..." onfocus="this.className += ' shadow'" onblur="this.className='input'"><button class="searchBtn" onclick="filter();"><i class="fa fa-search"></i></button></div>
+                <hr / style="border: 1.5px solid rgb(84, 199, 84)">
+                <div id="displayc"></div>
+                <div id="displaye"></div>
+                <p style="text-align:center;" id="homeButton"><button class="homeBtn" onclick="home();"><i class="fa fa-home"></i> Home</button></p>
+                <div id="content">
+                <div id="products">
+                <div id="footwears">
+                    <h1 class="proHead"><i class="fa fa-angle-double-down" style="color:aliceblue;"></i> Iphones</h1>
+                    <div style="text-align:center;" class="fContainer1">
+                    <div class="f1" id="iphonese">
+                        <div class="imgCover" alt="Please Wait Loading..."  id="f1">
+                        <img src="/images/products/phones/f1.jpg" width="200px" height="160px;"> 
+                            <div class="b" onclick="details('iphonese','/images/products/phones/f1.jpg')">+</div>
+                    </div>
+                        <p class="proInfoN" onclick="details('iphonese','/images/products/phones/f1.jpg')" id="Iphonese">Iphone SE</p>
+                        <p class="proInfo">$1200</p>
+                        <button class="adminBtnsEdit" onclick="details('iphonese','/images/products/phones/f1.jpg')" title="More" ><i class="fa fa-arrow-up"></i> MORE</button>
+                        <button class="adminBtnsDelete" onclick="remove('iphonese');" title="Delete Product" ><i class="fa fa-trash"></i> DELETE</button>
+                    </div>
+                    <div class="f2" id="iphone12">
+                        <div class="imgCover" alt="Please Wait Loading..."  id="f2">
+                        <img src="/images/products/phones/f2.jpg" width="200px" height="160px;"> 
+                            <div class="b" onclick="details('iphone12','/images/products/phones/f2.jpg')">+</div>
+                    </div>
+                        <p class="proInfoN" onclick="details('iphone12','/images/products/phones/f2.jpg')" id="Iphone12">Iphone 12 Pro Max</p>
+                        <p class="proInfo">$1200</p>
+                        <button class="adminBtnsEdit" onclick="details('iphone12','/images/products/phones/f2.jpg')" title="More" ><i class="fa fa-arrow-up"></i> MORE</button>
+                        <button class="adminBtnsDelete" onclick="remove('iphone12');" title="Delete Product" ><i class="fa fa-trash"></i> DELETE</button>
+                    </div>
+
+                    <div class="f3" id="iphone11">
+                        <div class="imgCover" alt="Please Wait Loading..."  id="f3">
+                        <img src="/images/products/phones/f3.jpg" width="200px" height="160px;"> 
+                            <div class="b" onclick="details('iphone11','/images/products/phones/f3.jpg')">+</div>
+                    </div>
+                        <p class="proInfoN" onclick="details('iphone11','/images/products/phones/f3.jpg')" id="Iphone11">Iphone 11 Pro Max</p>
+                        <p class="proInfo">$1400</p>
+                        <button class="adminBtnsEdit" onclick="details('iphone11','/images/products/phones/f3.jpg')" title="More" ><i class="fa fa-arrow-up"></i> MORE</button>
+                        <button class="adminBtnsDelete" onclick="remove('iphone11');" title="Delete Product" ><i class="fa fa-trash"></i> DELETE</button>
+                    </div>
+        
+                    <div class="f3" id="iphone13">
+                        <div class="imgCover" alt="Please Wait Loading..."  id="f4">
+                        <img src="/images/products/phones/f4.jpg" width="200px" height="160px;"> 
+                            <div class="b" onclick="details('iphone13','/images/products/phones/f4.jpg')">+</div>
+                    </div>
+                        <p class="proInfoN" onclick="details('iphone13','/images/products/phones/f4.jpg')" id="Iphone13">Iphone 13 Pro Max</p>
+                        <p class="proInfo">$1400</p>
+                        <button class="adminBtnsEdit" onclick="details('iphone13','/images/products/phones/f4.jpg')" title="More" ><i class="fa fa-arrow-up"></i> MORE</button>
+                        <button class="adminBtnsDelete" onclick="remove('iphone13');" title="Delete Product" ><i class="fa fa-trash"></i> DELETE</button>
+                    </div>
+
+                    </div>
+                    <div style="text-align:center;" class="fContainer2">
+                        <div class="f1" id="iphonese">
+                            <div class="imgCover" alt="Please Wait Loading..."  id="f1">
+                            <img src="/images/products/phones/f1.jpg" width="200px" height="160px;"> 
+                                <div class="b" onclick="details('iphonese','/images/products/phones/f1.jpg')">+</div>
+                        </div>
+                            <p class="proInfoN" onclick="details('iphonese','/images/products/phones/f1.jpg')" id="Iphonese">Iphone SE</p>
+                            <p class="proInfo">$1200</p>
+                            <button class="adminBtnsEdit" onclick="details('iphonese','/images/products/phones/f1.jpg')" title="More" ><i class="fa fa-arrow-up"></i> MORE</button>
+                            <button class="adminBtnsDelete" onclick="remove('iphonese');" title="Delete Product" ><i class="fa fa-trash"></i> DELETE</button>
+                        </div>
+                        <div class="f2" id="iphone12">
+                            <div class="imgCover" alt="Please Wait Loading..."  id="f2">
+                            <img src="/images/products/phones/f2.jpg" width="200px" height="160px;"> 
+                                <div class="b" onclick="details('iphone12','/images/products/phones/f2.jpg')">+</div>
+                        </div>
+                            <p class="proInfoN" onclick="details('iphone12','/images/products/phones/f2.jpg')" id="Iphone12">Iphone 12 Pro Max</p>
+                            <p class="proInfo">$1200</p>
+                            <button class="adminBtnsEdit" onclick="details('iphone12','/images/products/phones/f2.jpg')" title="More" ><i class="fa fa-arrow-up"></i> MORE</button>
+                            <button class="adminBtnsDelete" onclick="remove('iphone12');" title="Delete Product" ><i class="fa fa-trash"></i> DELETE</button>
+                        </div>
+    
+                        <div class="f3" id="iphone11">
+                            <div class="imgCover" alt="Please Wait Loading..."  id="f3">
+                            <img src="/images/products/phones/f3.jpg" width="200px" height="160px;"> 
+                                <div class="b" onclick="details('iphone11','/images/products/phones/f3.jpg')">+</div>
+                        </div>
+                            <p class="proInfoN" onclick="details('iphone11','/images/products/phones/f3.jpg')" id="Iphone11">Iphone 11 Pro Max</p>
+                            <p class="proInfo">$1400</p>
+                            <button class="adminBtnsEdit" onclick="details('iphone11','/images/products/phones/f3.jpg')" title="More" ><i class="fa fa-arrow-up"></i> MORE</button>
+                            <button class="adminBtnsDelete" onclick="remove('iphone11');" title="Delete Product" ><i class="fa fa-trash"></i> DELETE</button>
+                        </div>
+            
+                        <div class="f3" id="iphone13">
+                            <div class="imgCover" alt="Please Wait Loading..."  id="f4">
+                            <img src="/images/products/phones/f4.jpg" width="200px" height="160px;"> 
+                                <div class="b" onclick="details('iphone13','/images/products/phones/f4.jpg')">+</div>
+                        </div>
+                            <p class="proInfoN" onclick="details('iphone13','/images/products/phones/f4.jpg')" id="Iphone13">Iphone 13 Pro Max</p>
+                            <p class="proInfo">$1400</p>
+                            <button class="adminBtnsEdit" onclick="details('iphone13','/images/products/phones/f4.jpg')" title="More" ><i class="fa fa-arrow-up"></i> MORE</button>
+                            <button class="adminBtnsDelete" onclick="remove('iphone13');" title="Delete Product" ><i class="fa fa-trash"></i> DELETE</button>
+                        </div>
+                    <div id="newAddedOfIphones">
+
+                    </div>
+                    <button class="adminBtnsAdd" onclick="add('iphones','newAddedOfIphones');" title="ADD Product" id="iphonesAdd"><i class="fa fa-plus"></i> ADD PRODUCT</button>
+                    </div>
+                </div>
+                        </div>
+            </div>
+            <p id="topButton" style="text-align:center;"><a href="#top"><button class="topBtn" title="Top"><i class="fa fa-arrow-up"></i></button></a></p>
+            <div class="footer">
+                <p class="footerr">@COPYRIGHTS-2022. All Rights Reserved.</p><a href="#top">
+            </div>
+            </div>
+    <script src="/js/scripts.js"></script>
+</body>
+</html>
